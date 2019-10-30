@@ -31,6 +31,7 @@ function initBackground()
 		keyString = defaultKeyString;
 		localStorage['stupidifyKey'] = keyString;
 	}
+	sendKeyToAllTabs(keyString);
 	
 	chrome.extension.onRequest.addListener(function(request, sender, sendResponse)
 	{

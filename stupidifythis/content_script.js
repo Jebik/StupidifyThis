@@ -21,12 +21,6 @@ function stupidifyAlgo(text)
 
 async function stupidify() 
 {
-	navigator.permissions.query({
-		name: 'clipboard-read'
-	});	
-	navigator.permissions.query({
-		name: 'clipboard-write'
-	});
 	document.execCommand("cut");
 	var text = await navigator.clipboard.readText();
 	text = stupidifyAlgo(text);
