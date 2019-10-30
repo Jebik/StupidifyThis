@@ -1,0 +1,57 @@
+<html>
+<head>
+  <title>StupidifyThis</title>
+  <style>
+    body 
+	{
+		font-family: arial, helvetica, sans-serif;
+    }
+    .banner 
+	{
+		width: 100%;
+		float: left;
+		padding: 8px;
+    }
+    .body_wrapper 
+	{
+		padding: 8px;
+		width: 100%;
+		float: left;
+    }
+    #hotkey
+	{
+		font-size: 16px;
+		width: 15em;
+		margin-left: 12px;
+    }
+    #defaults 
+	{
+		margin-left: 24px;
+    }
+  </style>
+  <script src="keycodes.js"></script>
+  <script src="tabs.js"></script>
+  <script src="options.js"></script>
+  <script src="content_script.js"></script>
+</head>
+<body>
+
+<div class="banner">
+    <h1>Stupidify This Selection</h1>
+    <p>This extension lets you write like stupid spongedbob meme to show sarcasm to anyone easily.</p>
+</div>
+
+<div class="body_wrapper">
+    <h2>How to use</h2>
+	<p><span id="selected">Select some text</span>anywhere on a webpage, then either:</p>
+
+    <p>1. Right click on the selection then click on the StupidifyThis context menu, or	</p>
+
+    <p>2. Use this hot key: <input type="text" id="hotkey"></input></p>
+	
+	<textarea rows="5" cols="50" style="resize:none">Sample text to try the addon.</textarea>
+</div>
+
+
+</body>
+</html>
